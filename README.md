@@ -16,8 +16,8 @@ Try these out in this repo.
 ## Determine dependencies
 
 ```
-pants dependencies src/index.js
-pants dependencies --transitive src/index.js
+pants dependencies js/src/index.js
+pants dependencies --transitive js/src/index.js
 ```
 
 ## Lint and format
