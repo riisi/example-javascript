@@ -1,0 +1,13 @@
+{
+	"main": "src/index.ts",
+  "name": "demo_ts",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "jest",
+    "build": "npx tsc"
+  },
+	"devDependencies": {
+		"typescript": "^5.8.2"
+	},
+	"packageManager": "pnpm@8.15.7"
+}

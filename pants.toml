@@ -1,9 +1,11 @@
 [GLOBAL]
-pants_version = "2.23.0"
+pants_version = "2.26.0a1"
 
 backend_packages.add = [
   "pants.backend.experimental.javascript",
   "pants.backend.experimental.javascript.lint.prettier",
+  # TODO: Add this to docs? https://www.pantsbuild.org/prerelease/docs/using-pants/key-concepts/backends  
+  "pants.backend.experimental.typescript"
 ]
 
 [nodejs]
