@@ -1,6 +1,6 @@
 package_json(
     name="ts-pkg",
-    dependencies=[":ts-config", ":ts-src"],
+    dependencies=[":ts-src", ":tsconfig-json"],
     scripts=[
         # node_test_script(
         #     coverage_args=["--coverage", "--coverage-directory=.coverage/"],
@@ -15,9 +15,13 @@ package_json(
     ],
 )
 
-resources(
-    name="ts-config",
-    sources=["tsconfig.json"]
+# TODO: unmatched globs? 
+typescript_sources(name="tsconfig")
+
+# Needed for the build script
+resource(
+    name="tsconfig-json",
+    source="tsconfig.json"
 )
 
 # The ts src dependency seems not to be inferred, unlike for js
