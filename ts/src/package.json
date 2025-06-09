@@ -1,0 +1,10 @@
+{
+	"main": "index.ts",
+  "name": "demo_ts",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "jest",
+    "build": "npx tsc"
+  },
+	"packageManager": "pnpm@8.15.7"
+}

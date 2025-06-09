@@ -9,4 +9,4 @@ backend_packages.add = [
 ]
 
 [nodejs]
-package_manager = "npm"
+package_manager = "pnpm"
